@@ -23,7 +23,7 @@ Problem Statement number : 1
 
 - We all have either faced or seen such harashments and disturbing incidents right, specially in this social networking world where reaching and sending some text is jsut a matter of seconds now,
 
-_Our webapp HERVOICE is a forum where any girl can post their such incident and talks to others, help others, by sharing views and ideas. The girl can choose about being an anonymous or diplaying her name.
+<b>Our webapp HERVOICE is a forum where any girl can post their such incident and talks to others, help others, by sharing views and ideas. The girl can choose about being an anonymous or diplaying her name.</b>
 
 
 ## Tech Stack
