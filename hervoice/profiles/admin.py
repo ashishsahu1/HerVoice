@@ -4,4 +4,3 @@ from .models import Profile, Relationship
 
 admin.site.register(Profile)
 admin.site.register(Relationship)
-
