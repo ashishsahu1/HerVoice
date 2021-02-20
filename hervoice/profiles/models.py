@@ -1,6 +1,8 @@
 from typing import BinaryIO
 from django.db import models
 from django.contrib.auth.models import User
+from .utils import get_random_code
+from django.template.defaultfilters import slugify
 
 # Create your models here.
 class Profile(models.Model):
@@ -20,5 +22,16 @@ class Profile(models.Model):
     def __str__(self):
         return f"{self.user.username}-{self.created}"
 
+    #performing until we find a unique slug
     def save(self, *args, **kwargs):
-        pass
+        ex = False
+        if self.first_name and self.last_name:
+            to_slug = slugify(str(self.first_name)+" "+str(self.last_name))
+            ex = Profile.objects.filter(slug = to_slug).exists()
+            while ex:
+                to_slug = slugify(to_slug+ " " + str(get_random_code()))
+                ex = Profile.objects.filter(slug = to_slug).exists()
+        else:
+            to_slug = str(self.user)
+        self.slug = to_slug
+        super().save(*args, **kwargs)
