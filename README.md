@@ -1,8 +1,6 @@
 ```
-Team Name : Team Void
 Members : Ashish Sahu, ashishsahu10428@gmail.com, 8210209272
           Shristi Jalan, shristijalan1010@gmail.com, 6205661621
-Problem Statement number : 1 
 ```
 # HerVoice
  An app or a web application more like a blogging space where people anonymously share their traumatic experience allowing people to comment and share the story/experience.
